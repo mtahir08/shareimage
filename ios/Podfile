@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'shareimage' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for shareimage
+  # React-Native-Share pod
+pod 'RNShare', :path => '../node_modules/react-native-share'
+pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+
+  target 'shareimage-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'shareimageTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'shareimage-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for shareimage-tvOS
+
+  target 'shareimage-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
